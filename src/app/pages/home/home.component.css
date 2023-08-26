@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  align-items: center;
+}
+
+.others-news {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-news {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}

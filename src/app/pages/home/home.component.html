@@ -1,0 +1,29 @@
+<app-menu-bar></app-menu-bar>
+<div class="container">
+  <ng-container *ngIf="isMobile; then mobile else desktop"></ng-container>
+  <ng-template #mobile >
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+    <app-card></app-card>
+  </ng-template>
+
+  <ng-template #desktop >
+    <div class="main-news">
+      <div class="main-left">
+        <app-card [isHighlight]="true"></app-card>
+      </div>
+      <div class="main-right">
+        <app-card></app-card>
+        <app-card></app-card>
+      </div>
+    </div>
+    <div class="others-news">
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+    </div>
+  </ng-template>
+</div>
+
