@@ -1,16 +1,19 @@
-<div [ngClass]="{news: true , newsHighlight: isHighlight}">
-  <div class="photo">
-    <img [ngClass]="{ imgHighlight: isHighlight }" [src]="news.urlToImage">
-  </div>
-  <div class="content">
-    <div class="date">{{ news.publishedAt }}</div>
-    <div class="text">
-      <div class="title">
-        <h2>{{ news.title }}</h2>
-      </div>
-      <div class="description">
-        <p>{{ news.description }}</p>
+<a [href]="news.url" target="_blank" class="cardLink">
+  <div [ngClass]="{news: true , newsHighlight: isHighlight}">
+    <div class="photo">
+      <img [ngClass]="{ imgHighlight: isHighlight }" [src]="news.urlToImage">
+    </div>
+    <div class="content">
+      <div class="date">{{ news.publishedAt }}</div>
+      <div class="text">
+        <div class="title">
+          <h2>{{ news.title }}</h2>
+        </div>
+        <div class="description">
+          <p>{{ news.description }}</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</a>
+
